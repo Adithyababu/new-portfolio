@@ -1,0 +1,238 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Itim', cursive;
+}
+.container{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background:white;
+}
+nav{
+    display: flex;
+    width:84%;
+    margin-left: 100px;
+    align-items: center;
+    justify-content: space-between;
+}
+ nav ul li{
+    display: inline;
+    list-style: none;
+    margin: 10px 20px ;
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+/*pseudo class
+selector:pseudo-class name{property:value}
+*/
+nav ul li a:hover{
+    color: red;
+}
+.title{
+    margin-left: 8%;
+    margin-top: 10%;
+}
+.title h1{
+    font-size: 50px;
+    color: black;
+    margin-bottom: 20px;
+}
+.title span{
+    font-size: 50px;
+    color: orange;
+}
+.title p{
+    color: rgb(87, 87, 87);
+    font-family: 'Rubik', sans-serif;
+    line-height: 22px;
+
+}
+.title a{
+    background: black;
+    padding: 10px 18px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    display: inline-block;
+    margin: 50px 0px;
+    border-radius: 5px;
+}
+.images{
+    height: 40%;
+    width:30%;
+    position: absolute;
+    bottom: 0;
+    right: 40px;
+}
+.images img{
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    transition: bottom 1s,left 1s;
+
+}
+.images:hover .shape{
+    bottom: 50px;
+}
+.images:hover  .girl{
+    left:40%;
+}
+#about{
+    margin-left: 8%;
+    margin-top: 13%;
+    margin-right: 8%;
+
+}
+.heading{
+    text-align: center;
+}
+.heading h2{
+    font-size: 35px;
+}
+.heading span{
+    font-size: 25px;
+    color: rgb(5, 219, 5);
+}
+.about-content{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1rem;
+    margin-top: 5rem;
+}
+.about-text{
+    text-align: justify;
+    font-size: 18px;
+    font-weight: 400;
+}
+.informations{
+    margin: 1rem 0;
+}
+.informations .info-box{
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+.informations .info-box span{
+    font-weight: 400;
+    margin-left: 10px;
+}
+html{
+    scroll-behavior: smooth;
+}
+#skill{
+    margin-left: 8%;
+    margin-top: 13%;
+    margin-right: 8%;
+}
+.skill-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    gap: 2rem;
+}
+.skill-image img{
+    width: 80%;
+    object-position: center;
+    padding-left: 5rem;
+}
+.bar-box{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    margin-bottom: 1rem;
+}
+.bar-box h3,span{
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+.light-bars{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background-color: rgb(2, 38, 166);
+    border-radius: 10px;
+}
+.percent-bar{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width:100% ;
+    height:5px;
+    background-color: rgb(251, 7, 64);
+    border-radius: 10px;
+}
+.html-bar{
+    width: 90%;
+}
+.css-bar{
+    width:70%;
+}
+.js-bar{
+    width:70%;
+}
+.react-bar{
+    width: 60%;
+}
+#contact{
+    margin-left: 8%;
+    margin-top: 13%;
+    margin-right: 8%;   
+}
+.iconDiv{
+    margin-top: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 20px;
+}
+.icon{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px;
+}
+.icon i{
+    font-size: 30px;
+}
+.icon:hover{
+    background-image: linear-gradient( rgb(253, 249, 1), rgb(255, 0, 0));
+
+}
+footer{
+    text-align: center;
+    margin: 2rem 0;
+}
+.up-arrow{
+    float: right;
+    margin: 1rem 2rem;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient( rgb(253, 249, 1), rgb(255, 0, 0));
+}
+::-webkit-scrollbar{
+    width: 15px;
+}
+::-webkit-scrollbar-track{
+    background-color: bisque;
+}
+::-webkit-scrollbar-thumb{
+    background-color: rgb(255, 157, 0);
+    border-radius: 10px;
+}
